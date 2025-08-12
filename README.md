@@ -63,25 +63,6 @@ docker run -p 8000:8000 math-api
 | GET    | /history      | Istoric operații efectuate       |
 
 
-
-## 📦 Structura proiectului
-
-math_service/
-├── main.py              # aplicația FastAPI
-├── api/routes.py        # endpointuri REST
-├── core/calculator.py   # funcții matematice + cache
-├── models/schemas.py    # validare input/output
-├── db/database.py       # conexiune SQLite
-├── services/
-│   ├── recorder.py      # salvare operații + CSV
-│   ├── logger.py        # sistem logging
-├── tests/test_api.py    # testare automatizată
-├── requirements.txt
-├── Dockerfile
-└── README.md
-
-
-
 ## 🧪 Testare automată
 
 ### 1. Instalează `pytest` dacă nu este deja:
